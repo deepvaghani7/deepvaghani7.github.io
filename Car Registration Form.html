@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+           <title> Car Registration Form </title>
+</head>
+<body >
+<fieldset>
+<legend>BOOK YOUR CAR</legend>
+<form>
+    <table border="1" align="center">
+        <tr>
+             <td colspan="2">
+                  <h1> Car Register Now..! </h1>	
+             </td>
+        </tr>
+        <tr>  
+             <td>
+                   <label for="uname">Full Name(Mr/Mrs/Ms):</label>
+             </td>
+             <td>
+                   <input type="text" placeholder="Enter name" id="uname" name="username" required>
+             </td>
+        </tr>
+        <tr>
+           <td>
+                 <label for="lname">Last name:</label>
+            </td>
+           <td>
+                <input type="text" id="lname" name="lname" placeholder="Can't Fill L Name" disabled>
+           </td>
+        </tr>
+         <tr>
+            <td>
+                <label for="uemail">Email :</label>
+            </td>
+            <td>
+                <input type="text" id="uemail" name="usermail" autocomplete="off" placeholder="Enter Email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <label for="phone">Enter a phone number:</label>
+            </td>
+            <td>
+                 <input type="tel" id="phone" name="phone" maxlength="10" placeholder="123-45-678-90" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            </td>
+        </tr>
+        <tr>  
+              <td>
+                     <label for="pan card no">Pancard No: </label>
+              </td>
+              <td>
+                      <input type="text" id="pancard no" name="pancard no" maxlength="10" placeholder="Enter Pan No" required> 
+        </tr>
+        <tr>  
+              <td>
+                     <label for="adhar card no">Adharcard No: </label>
+              </td>
+              <td>
+                      <input type="tel" id="adharcard no" name="adharcard no" maxlength="12" placeholder="Enter Adhar No" required> 
+        </tr>
+        <tr>
+            <td>
+                <label for="photo">Photo: </label>
+            </td>
+            <td>
+                <input type="file" id="photo" placeholder="Enter Passport Size Photo" required>
+            </td>
+        </tr>
+        <tr>
+              <td>
+                    <label for="car&company name"> Car&Company Name: </label>
+              </td>
+              <td>
+                     <input type="text" placeholder="Enter Car&Company Name" name="Car&Company Name" required> 
+               </td>
+        </tr>
+        <tr>
+        <td>
+               <label for="cars">Choose a car:</label>
+        </td>
+        <td>
+               <select name="cars" id="cars"> 
+               <optgroup label="Toyota Cars">
+               <option value="fortunare">Fortunare</option>
+               <option value="inovva">Inovva</option>
+               </optgroup>
+               <optgroup label="Hundai Cars">
+               <option value="verena">Verena</option>
+               <option value="elentra">Elentra</option>
+               </optgroup>
+               </select>
+        </td>
+       </tr>	
+        <tr>
+               <td>
+                        <label for="colour"> Colour(Model Wise Selected): </label>
+               </td>
+               <td>
+                        <input type="color" placeholder="Choose Colour" name="Colour Name" required>
+                 </td>
+        </tr>
+        <tr>
+                 <td>
+                         <label for="Registration date"> Registration date: </label>
+                 </td>
+                 <td>
+                          <input type="date" name="date">
+                 </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sign">Signature: </label>
+            </td>
+            <td>
+                <input type="file" id="sign" placeholder="Enter Signature Photo" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Method Of Payment: </label>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" value="a" name="cash">Cash
+                </label>
+                <label>
+                    <input value="b" type="radio"  name="check"> Check
+                </label>
+                 <label>
+                    <input value="c" type="radio"  name="loan"> Loan
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Gender: </label>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" value="f" name="gender"> Female</label>
+                    <label>
+                    <input value="m" type="radio" name="gender"> Male</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    <label for="city">City: </label>
+            </td>
+            <td>
+                    <select id="city" name="city">
+                        <option disabled selected>--Choose City--</option>
+                            <optgroup label="Metros">
+                                <option>New Delhi</option>
+                                <option>Mumbai</option>
+                                <option>Gujarat</option>
+                                <option>Kolkata</option>
+                            </optgroup>
+                            <optgroup label="Others">
+                                <option>Ahmedabad</option>
+                                <option>Surat</option>
+                                <option>Amreli</option>
+                                <option>Bhavnagar</option>
+                            </optgroup>
+                    </select>
+            </td>
+        </tr>
+       <tr>
+             <td>
+                       <label for="country">Country:</label>
+             </td>
+            <td>  
+                        <input type="text" id="country" name="country" value="India" readonly>
+            </td>
+       </tr>
+        <tr>
+            <td>
+                <label>Address: </label>
+            </td>
+            <td>
+                <textarea rows="4" cols="40" wrap="hard" placeholder="Enter Address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" value="Submit">Submit >
+                <button type="reset">Reset </button>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+</form>
